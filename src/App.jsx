@@ -9,7 +9,7 @@ import { io } from "socket.io-client";
 
 const App = () => {
   const [isTeacher, setIsTeacher] = useState(null);
-  const socket = io("https://intervue-assignment-backend-381w.onrender.com:10000"); // Replace with actual socket connection
+  const socket = io("https://intervue-assignment-backend-381w.onrender.com"); // Replace with actual socket connection
 
   const handleRoleSelection = (role) => {
     setIsTeacher(role === "teacher");
